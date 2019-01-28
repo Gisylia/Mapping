@@ -13,7 +13,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // add in the mapping view
+        /* add in the mapping view this will loccate the long/lat of the given
+        location usind the activity.main page as well
+         */
+
+
       MapView mv = findViewById(R.id.map1);
 
       mv.setBuiltInZoomControls(true);
@@ -21,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
       mv.getController().setZoom(14);
       mv.getController().setCenter(new GeoPoint(51.05, -0.72));
+
+
+
+      // btn area
+
+
+
 
 
 

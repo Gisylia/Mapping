@@ -8,11 +8,13 @@ android {
         // this is for version levels Kit Kat and higher
         minSdkVersion 19
 
-        // changed from 27 - 22 because its the level of android standard the app will use  27 is equivalent to oreo snd the app
-        // will think you are using runtime permissions checking which you are not
-        //this means you can turn the app on and off at any time and allow the user to turn different permissions on and off
-        // so add it if you know what it means
+        /* changed from 27 - 22 because its the level of android standard the app will use  27 is equivalent to oreo snd the app
+        will think you are using runtime permissions checking which you are not
+        this means you can turn the app on and off at any time and allow the user
+        to turn different permissions on and off so add it if you know what it means
+        /*
 
+         */
         //search run time permissions
         targetSdkVersion 22
 
@@ -33,7 +35,8 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
-// add in this implementaion
+/* add in this
+*note the term to do dependencies has changed from compile to implementation*/
     implementation 'org.osmdroid:osmdroid-android:5.6.5@aar'
 
 
