@@ -11,7 +11,9 @@ import android.widget.TextView;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
 
-public class MainActivity extends AppCompatActivity {
+
+//ensure that the main activity implements the stuff on the activity main page
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
         // this is calling the btn action from the activity main
         Button b = (Button) findViewById(R.id.btn1);
-        b.setOnClickListener((OnClickListener) this);
+        // listener for the button
+        b.setOnClickListener(this);
 
 
-        /* add in the mapping view this will loccate the long/lat of the given
-        location usind the activity.main page as well
+        /* add in the mapping view this will locate the long/lat of the given
+        location used in the activity.main page as well
          */
         MapView mv = findViewById(R.id.map1);
 
@@ -32,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
         mv.setClickable(true);
         mv.getController().setZoom(14);
         mv.getController().setCenter(new GeoPoint(51.05, -0.72));
-
-
     }
 
 
@@ -41,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         // this is from the activity main
         TextView tv = (TextView) findViewById(R.id.tv1);
         EditText et = (EditText) findViewById(R.id.et1);
-
 
     }
 
