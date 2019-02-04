@@ -41,14 +41,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mv.setClickable(true);
         mv.getController().setZoom(14);
         mv.getController().setCenter(new GeoPoint(51.05, -0.72));
-    }
     */
+    }
 
 // inflates the xml menu and makes the menu appear in the activity
-    public boolean onCreateOptionsMenu(Menu, menu)
+    public boolean onCreateOptionsMenu(Menu menu)
     {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.Menu.menu, menu);
+        inflater.inflate(R.menu.menu, menu);
         return true;
     }
 // reacts to an item being selected
