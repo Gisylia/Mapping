@@ -2,4 +2,6 @@
     <string name="app_name">Mapping</string>
     <string name="continueBtn">continue</string>
     <string name="changemap">change Map Style</string>
+    <string name="hikebikemapview">Hike/Bike</string>
+    <string name="regularview">Mapnik</string>
 </resources>

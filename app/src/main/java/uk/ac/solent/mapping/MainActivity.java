@@ -1,9 +1,11 @@
 package uk.ac.solent.mapping;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.view.View.OnClickListener;
 import android.view.View;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         /* add in the mapping view this will locate the long/lat of the given
         location used in the activity.main page as well
          */
+        /*
         MapView mv = findViewById(R.id.map1);
 
         mv.setBuiltInZoomControls(true);
@@ -39,16 +42,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mv.getController().setZoom(14);
         mv.getController().setCenter(new GeoPoint(51.05, -0.72));
     }
+    */
 
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-
+// inflates the xml menu and makes the menu appear in the activity
+    public boolean onCreateOptionsMenu(Menu, menu)
+    {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.Menu.menu, menu);
-
         return true;
     }
+// reacts to an item being selected
+    public boolean onOptionsItemsSelected(MenuItem item)
 
+    {
+        // use the .id from the menu.xml file
+        if(item.getItemId() == R.id.changeMapStyle1)
+        {
+            Intent intent= new Intent( this, MapChooseActivity.class)
+            //start activity actually starts the activity
+            startActivity(intent);
+            return true;
+        }
+        return false;
+
+    }
+
+// intent = a message from one application component to another
     public void onClick(View view) {
         // this is from the activity main
         TextView tv = (TextView) findViewById(R.id.tv1);
