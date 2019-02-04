@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Mapping</string>
     <string name="continueBtn">continue</string>
+    <string name="changemap">change Map Style</string>
 </resources>
