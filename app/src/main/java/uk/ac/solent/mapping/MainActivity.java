@@ -1,21 +1,15 @@
 package uk.ac.solent.mapping;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.view.View.OnClickListener;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-import org.osmdroid.util.GeoPoint;
-import org.osmdroid.views.MapView;
 
 
 //ensure that the main activity implements the stuff on the activity main page
@@ -75,4 +69,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-}
+    // week 6 list views and list activites
+
